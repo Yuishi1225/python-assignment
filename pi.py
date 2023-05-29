@@ -1,12 +1,16 @@
-text = """
-    How I want a drink, alcoholic of course, after the heavy chapters involving
-    quantum mechanics. All of thy geometry, Herr Planck, is fairly hard.
-"""
+text = "How I want a drink, alcoholic of course, after the heavy chapters involving quantum mechanics. All of thy geometry, Herr Planck, is fairly hard."
 
 # TODO
 
-text = ["How", "I", "want", "a", "drink", "alcoholic", "of", "course", "after", "the", "heavy", "chapters", "involving", "quantum", "mechanics","All", "of", "thy", "geometry", "Herr", "Planck", "is", "fairly", "hard" ]
 
-list(map(len, text))
+import re
 
-list(map(len, ["a", "bc", "def"]))
+re.split('[./,/ ]+', text)
+
+a=re.split('[./,/ ]+', text)
+b=''
+while b in a:
+    a.remove('')
+print(a)
+
+    
