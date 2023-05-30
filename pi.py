@@ -9,8 +9,19 @@ re.split('[./,/ ]+', text)
 
 a=re.split('[./,/ ]+', text)
 b=''
-while b in a:
-    a.remove('')
+c=','
+d='.'
+e=' '
+if b or c or d or e in a:
+    while b or c or d or e in a:
+     a.remove(b), a.remove(c),a.remove(d),a.remove(e)
+     if b and c and d and e not in a:
+        break
+     
+
+
 print(a)
+
+
 
     
