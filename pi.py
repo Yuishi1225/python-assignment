@@ -14,13 +14,19 @@ d='.'
 e=' '
 if b or c or d or e in a:
     while b or c or d or e in a:
-     a.remove(b), a.remove(c),a.remove(d),a.remove(e)
+     a.remove(''), a.remove(' '),a.remove(','),a.remove('.')
      if b and c and d and e not in a:
         break
-     
+     print(a)
+
+list(map(len,a))
+a=list(map(len,a))
+list(map(str, a))
+a=list(map(str, a))
+"".join(a)
 
 
-print(a)
+
 
 
 
