@@ -12,18 +12,18 @@ b=''
 c=','
 d='.'
 e=' '
-if b or c or d or e in a:
-    while b or c or d or e in a:
-     a.remove(''), a.remove(' '),a.remove(','),a.remove('.')
-     if b and c and d and e not in a:
-        break
-     print(a)
+
+for item in [b, c, d, e]:
+    while item in a:
+        a.remove(item)
 
 list(map(len,a))
 a=list(map(len,a))
 list(map(str, a))
 a=list(map(str, a))
-"".join(a)
+result="".join(a)
+
+print(result)
 
 
 
