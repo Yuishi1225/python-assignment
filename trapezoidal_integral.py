@@ -14,7 +14,7 @@ def f(x):
 h=(b-a)/N
 
 S=0
-for k in range(1, N):
+for k in range(1, N+1):
     S+=1/2*h*(f(a+k*h)+f(a+(k-1)*h))
 print(S)
 
