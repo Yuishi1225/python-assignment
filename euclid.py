@@ -5,15 +5,27 @@ b = int(input("b の値を入力: "))
 
 def gcd(a,b):
     while b != 0:
-        a, b= a, a%b
-    print(c)
+        a, b= b, a%b
+    return a
+
+print (gcd(a,b))
     
 
-gcd(10, 20)
-gcd(14, 91)
-gcd(91, 14)
+print(gcd(10, 20))
+print(gcd(14, 91))
+print(gcd(91, 14))
 
 #問4
+
+
+def gcd(a,b):
+    while b != 0:
+        a, b= b, a%b
+    return a
+ 
+result=gcd(a,b)==1
+print(result)
+
 
 
 
