@@ -15,16 +15,14 @@ print(gcd(10, 20))
 print(gcd(14, 91))
 print(gcd(91, 14))
 
-#問4
-
+#4問目
 
 def gcd(a,b):
     while b != 0:
         a, b= b, a%b
-    return a
- 
-result=gcd(a,b)==1
-print(result)
+    return a==1 
+
+
 
 
 
